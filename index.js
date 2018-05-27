@@ -7,7 +7,7 @@ function randomIntFromInterval(min,max)
 }
 
 const requestHandler = (request, response) => {
-  let timeout = randomIntFromInterval(6,8)
+  let timeout = randomIntFromInterval(6000,8000)
   console.log(request.url + " responding in " + timeout)
   setTimeout(() => response.end('Hello Node.js Server!'), timeout)
 }
